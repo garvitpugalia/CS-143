@@ -1,0 +1,48 @@
+-- For primary key
+
+INSERT INTO Actor
+VALUES (1,"Pugalia","Garvit", "Male", NULL, NULL);
+
+INSERT INTO Movie
+VALUES (2, "Dr. Strange", 2016, "A", "Company");
+
+INSERT INTO Director
+VALUES (3, "Pugalia", "Garvit", NULL, NULL);
+
+-- For foreign key
+
+-- max is 4750
+INSERT INTO Sales
+VALUES (5000, 100, 1000);
+
+INSERT INTO MovieGenre
+VALUES (5000, "Horror");
+
+INSERT INTO MovieDirector
+VALUES (0, 3);
+
+INSERT INTO MovieActor
+VALUES (0, 1, "Player");
+
+INSERT INTO MovieActor
+VALUES (1, 70000, "Player");
+
+INSERT INTO MovieRating
+VALUES (5500, 50, 50);
+
+INSERT INTO REVIEW
+VALUES ("Garvit Pugalia", CURRENT_TIMESTAMP, 5500, 4, "Good movie");
+
+-- For constraint checks:
+
+INSERT INTO MovieRating
+VALUES (2, -5, 40);
+
+INSERT INTO MovieRating
+VALUES (2, 10, 140);
+
+INSERT INTO Review
+VALUES ("Garvit Pugalia", CURRENT_TIMESTAMP, 2, 7, "Good movie");
+
+INSERT INTO Actor
+VALUES (70000, "Pugalia", "Garvit", "Mail", NULL, NULL);
